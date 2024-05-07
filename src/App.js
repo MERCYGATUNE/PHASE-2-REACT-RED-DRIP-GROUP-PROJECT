@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default App;https://github.com/MERCYGATUNE/PHASE-2-REACT-RED-DRIP-GROUP-PROJECT
+export default App;
