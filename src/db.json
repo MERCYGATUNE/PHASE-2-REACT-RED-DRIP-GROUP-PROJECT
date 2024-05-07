@@ -1,0 +1,46 @@
+{
+  "bloodgroup": [
+    {
+      "id": 1,
+      "title": "🩸A+",
+      "number": 10
+    },
+    {
+      "id": 2,
+      "title": "🩸B+",
+      "number": 20
+    },
+    {
+      "id": 3,
+      "title": "🩸O+",
+      "number": 30
+    },
+     {
+      "id": 4,
+      "title": "🩸AB+",
+      "number": 90
+    },
+    {
+      "id": 5,
+      "title": "🩸A-",
+      "number": 70
+    },
+    {
+      "id": 6,
+      "title": "🩸B-",
+      "number": 50
+    },
+     {
+      "id": 7,
+      "title": "🩸O-",
+      "number": 10
+    },
+    {
+      "id": 8,
+      "title": "🩸AB-",
+      "number": 20
+    }
+    
+    
+  ]
+}

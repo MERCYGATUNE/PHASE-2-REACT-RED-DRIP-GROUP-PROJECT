@@ -1,0 +1,68 @@
+.register {
+    margin-top: 10px;
+}
+
+.loogin {
+    margin-top: 100px;
+}
+
+
+
+.ddonor-portal {
+    margin-left: 520px;
+    margin-top: 1200px;
+    font-size: 30px;
+}
+
+.welccome {
+    color: red;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 100px;
+}
+
+.sideee-navbar {
+    margin-bottom: 100px;
+    margin-top: 150px;
+
+}
+
+nav nl li a {
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    padding-bottom: 100px;
+    object-position: space-between;
+}
+
+/* Slide in the sidebar when hovering */
+.sideee-navbar:hover {
+    margin-left: 2;
+    background-color: rgb(126, 37, 37);
+}
+
+.sideee-navbar nl {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sideee-Navbar nl li {
+    padding: 10px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.sideee-Navbar nl li:hover {
+    background-color: rgb(218, 66, 124);
+    border-radius: 5px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.sideee-Navbar nl li:hover {
+    background-color: rgb(218, 66, 124);
+    border-radius: 5px;
+}
