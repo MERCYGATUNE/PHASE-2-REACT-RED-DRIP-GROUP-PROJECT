@@ -9,7 +9,9 @@ header {
     height: 200px;
     border-radius: 5px;
     padding: 20px;
-    margin-left: 60 0px;
-    margin-top: 90px;
 
+}
+
+.donor-login-title {
+    margin-top: -700px;
 }

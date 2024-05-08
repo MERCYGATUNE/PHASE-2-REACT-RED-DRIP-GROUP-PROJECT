@@ -1,11 +1,16 @@
 .adminn {
     margin-left: 600px;
+    margin-top: 200px;
 }
 
 /* Admin.css */
 
 .admin-page {
     display: flex;
+}
+
+.welcomm {
+    margin-top: 200px;
 }
 
 .sidebar {

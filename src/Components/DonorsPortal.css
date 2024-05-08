@@ -6,53 +6,57 @@
     margin-top: 100px;
 }
 
+.donor-portal {
+    display: flex;
+    margin-bottom: 300px;
+}
 
-
-.ddonor-portal {
-    margin-left: 520px;
-    margin-top: 1200px;
+.porrtal-header {
+    margin-left: 600px;
+    margin-top: 200px;
     font-size: 30px;
 }
 
-.welccome {
-    color: red;
-    font-size: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.side-navbar {
+    width: 300px;
+    background-color: #8a3a3a;
+    padding: 40px;
+    font-size: 30px;
+    cursor: pointer;
     margin-top: 100px;
+    z-index: 1000;
+    margin-left: -310px;
+    position: fixed;
+    transition: margin-left 0.3s ease;
+    color: aliceblue;
+    height: 800px;
 }
 
-.sideee-navbar {
-    margin-bottom: 100px;
-    margin-top: 150px;
-
-}
-
-nav nl li a {
-    color: black;
-    font-size: 20px;
-    margin-left: 10px;
-    padding-bottom: 100px;
-    object-position: space-between;
-}
-
-/* Slide in the sidebar when hovering */
-.sideee-navbar:hover {
-    margin-left: 2;
+.donor-portal:hover .side-navbar {
+    margin-left: 0px;
     background-color: rgb(126, 37, 37);
 }
 
-.sideee-navbar nl {
-    list-style-type: none;
-    padding: 0;
+.side-navbar:hover {
+    margin-left: 200px;
+    background-color: rgb(126, 37, 37);
+
 }
 
-.sideee-Navbar nl li {
+.side-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-navbar ul li {
     padding: 10px 0;
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
-.sideee-Navbar nl li:hover {
+.side-navbar ul li:hover {
     background-color: rgb(218, 66, 124);
     border-radius: 5px;
 }
@@ -62,7 +66,117 @@ nav nl li a {
     padding: 20px;
 }
 
-.sideee-Navbar nl li:hover {
-    background-color: rgb(218, 66, 124);
+.side-navbar ul li a {
+    text-decoration: none;
+    color: inherit;
+    color: antiquewhite;
+}
+
+.side-navbar ul li a:hover {
+    color: inherit;
+}
+
+nav li a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.cardi {
+    width: calc(45% - 50px);
+    border: 1px solid #ccc;
     border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.portal-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 600px;
+    margin-top: 700px;
+}
+
+.portal-content {
+    text-align: center;
+
+}
+
+.formm-group {
+    margin-top: 400px;
+}
+
+#home {
+    margin-top: 0px;
+}
+
+.blloood {
+    margin-left: 100px;
+    margin-top: 50px;
+    /* Adjusted margin-top value */
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    /* Change text color to black */
+}
+
+.bld {
+    margin-top: 20px;
+    /* Adjusted margin-top value */
+    font-size: 30px;
+    color: black;
+    /* Change text color to black */
+}
+
+.mmm {
+    margin-bottom: 650px;
+    /* Adjusted margin-bottom value */
+    font-size: 20px;
+    /* Adjusted padding */
+}
+
+.formm-group {
+    margin-top: 200px;
+    /* Adjusted margin-top value */
+}
+
+.formm-group label {
+    font-size: 20px;
+    /* Adjusted font size */
+    color: black;
+
+}
+
+.formm-group select,
+.formm-group input {
+    width: 100%;
+    /* Set width to 100% */
+    padding: 10px;
+    /* Adjusted padding */
+    font-size: 16px;
+    /* Adjusted font size */
+    margin-top: 10px;
+    /* Adjusted margin-top value */
+}
+
+.formm-group select {
+    border-radius: 5px;
+    /* Added border-radius */
+}
+
+.formm-group input[type="number"],
+.formm-group input[type="text"] {
+    border-radius: 5px;
+    /* Added border-radius */
+    border: 1px solid #ccc;
+    /* Added border */
 }

@@ -125,10 +125,8 @@ function Admin() {
         </ul>
       </div>
       <div className="main-content">
-        <h1 className='adminn' id='home'>Admin Dashboard</h1>
         {isLoggedIn ? (
           <div className='homee' id='home'>
-            <p className='hhome' id='home'>Admin</p>
             <h2 className='welcomm'>Welcome to the Admin Dashboard</h2>
             <div className="card-container">
               {cardsData.map((card, index) => (

@@ -1,13 +1,13 @@
 /* Header.css */
-header {
+.head {
     background-color: #582626;
     color: #fff;
-    padding: 8px;
+    padding: 4px;
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    top: 15vmin;
-
+    top: 13vmin;
+    width: 100%;
 
 }
 
@@ -21,6 +21,7 @@ nav ul {
 
 nav ul li {
     margin-left: 10px;
+    margin-top: 40px;
 
 }
 
@@ -32,12 +33,13 @@ nav ul li:first-child {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px;
+    padding: 40px;
+
 }
 
 nav ul li a:hover {
-    background-color: #ee9c9c;
     transition: 0.7s;
+
 }
 
 .drip {
@@ -47,17 +49,16 @@ nav ul li a:hover {
 }
 
 .logo {
-    top: 70%;
+    top: 1;
     font-size: 20px;
-    margin-top: 0px;
-    margin-left: 80px;
+    margin-top: 1px;
+    margin-left: 10px;
 }
 
-.blood {
-    font-size: 40px;
-    margin-left: 100px;
-    margin-top: -50px;
-    color: red;
+.bblood {
+    font-size: 50px;
+    margin-right: 210px;
+    margin-top: 0px;
 }
 
 .redd {
