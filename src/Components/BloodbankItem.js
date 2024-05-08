@@ -34,22 +34,6 @@ function BloodbankItem() {
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   )
 }
