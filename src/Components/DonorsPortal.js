@@ -33,30 +33,33 @@ function DonorPortal() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Blood Group:", bloodGroup);
-    console.log("Unit:", unit);
-    console.log("Disease:", disease);
-    console.log("Age:", age);
+  e.preventDefault();
+  // Handle form submission here
+  console.log("Blood Group:", bloodGroup);
+  console.log("Unit:", unit);
+  console.log("Disease:", disease);
+  console.log("Age:", age);
 
-    // Update donor history with new donation
-    const newDonation = {
-      bloodGroup,
-      unit,
-      disease,
-      age,
-      status: 'accepted' 
-    };
-
-    setDonorHistory([...donorHistory, newDonation]);
-
-    // Clear form fields after submission
-    setBloodGroup('');
-    setUnit('');
-    setDisease('');
-    setAge('');
+  // Update donor history with new donation
+  const newDonation = {
+    bloodGroup,
+    unit,
+    disease,
+    age,
+    status: 'accepted' 
   };
+
+  setDonorHistory([...donorHistory, newDonation]);
+
+  // Clear form fields after submission
+  setBloodGroup('');
+  setUnit('');
+  setDisease('');
+  setAge('');
+
+  // Display window alert
+  window.alert('Successfully requested. Please visit the hospital tab for more information and hospital information.');
+};
 
   return (
     <div className="donor-portal">

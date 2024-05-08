@@ -67,8 +67,10 @@ function Admin() {
               <th>Name</th>
               <th>Blood Group</th>
               <th>Address</th>
-              <th>Mobile</th>
+              <th>hospital</th>
+              <th>mobile</th>
               <th>Action</th>
+              
             </tr>
           </thead>
           <tbody>
@@ -77,6 +79,7 @@ function Admin() {
                 <td>{detail.name}</td>
                 <td>{detail.bloodGroup}</td>
                 <td>{detail.address}</td>
+                <td>{detail.hospital}</td>
                 <td>{detail.mobile}</td>
                 <td>
                   <button onClick={() => handleEdit(detail.id)}>Edit</button>
@@ -122,7 +125,7 @@ function Admin() {
               {cardsData.map((card, index) => (
                 <div className="card" key={index}>
                   <h3 className="card-title">{card.title}</h3>
-                  <p className="card-content">Number: {card.number}</p>
+                  <p className="card-content">blood in stock: {card.number}</p>
                 </div>
               ))}
               <div className="card">

@@ -12,6 +12,7 @@ function Header() {
           <h1 className='logo'> <span className='redd'>RED</span><span className='drip'>DRIP</span> <span className='bblood'>&#x1FA78;</span> </h1>      
           <li><Link to="/">Home</Link></li>
           <li><Link to="/patient">Patient</Link></li>
+          <li><Link to="/bloodbanks">bloodbank</Link></li>
       <FontAwesomeIcon icon="fa-solid fa-bed" />
           <li><Link to="/donor">Donor</Link></li>
                <FontAwesomeIcon icon="fa-solid fa-bed" />

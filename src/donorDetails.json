@@ -5,21 +5,24 @@
       "name": "collo",
       "bloodGroup": "A+",
       "address": "nairobi",
-      "mobile": "071010101"
+      "mobile": "071010101",
+      "hospital":"Nairobi women"
     },
     {
       "id": 2,
       "name": "mercy",
       "bloodGroup": "B-",
       "address": "westlands ",
-      "mobile": "073824839223"
+      "mobile": "073824839223",
+      "hospital":"kenyatta hospital"
     },
     {
       "id": 3,
       "name": "Alice",
       "bloodGroup": "O+",
       "address": "kisumu",
-      "mobile": "074223451"
+       "hospital":"Nairobi hospital",
+      "mobile": "0723798237"
     }
   ]
 }
