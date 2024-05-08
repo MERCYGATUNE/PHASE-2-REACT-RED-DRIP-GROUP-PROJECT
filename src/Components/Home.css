@@ -1,0 +1,37 @@
+#nursee {
+    width: 50%;
+    height: auto;
+    margin-top: auto;
+    margin-top: 130px;
+}
+
+Header {
+    margin-top: -24px;
+}
+
+body {
+    background-color: rgb(240, 148, 162);
+}
+
+.paragraph {
+    margin-left: 900px;
+    width: 400px;
+    margin-top: -600px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-content {
+    margin-left: 1000px;
+    margin-top: 90px;
+}
+
+header {
+    background-color: #582626;
+    color: #fff;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    margin-top: 330px;
+}
