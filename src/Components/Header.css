@@ -1,12 +1,13 @@
 /* Header.css */
 header {
-    background-color: #582626;
+    background-color: #58262609;
     color: #fff;
     padding: 8px;
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    top: 15vmin;
+    top: 10vmin;
+    width:100%;
 
 
 }

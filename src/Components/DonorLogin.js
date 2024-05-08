@@ -20,9 +20,9 @@ function DonorLogin({ onLoginSuccess }) {
 
   return (
     <div className="loggin-container">
-      <h2 className="donor-login-title">Donor Login</h2>
+      <h2 className="donor-login-title">DONOR LOGIN</h2>
       <div className="input-group">
-        <label htmlFor="username">username:</label>
+        <label htmlFor="username">USERNAME:</label>
         <input
           type="username"
           id="username"
@@ -32,7 +32,7 @@ function DonorLogin({ onLoginSuccess }) {
         />
       </div>
       <div className="input-group">
-        <label htmlFor="password">Password:</label>
+        <label htmlFor="password">PASSWORD:</label>
         <input
           type="password"
           id="password"

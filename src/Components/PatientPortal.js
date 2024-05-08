@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import DonorLogin from './DonorLogin'; 
-import './DonorsPortal.css';
+import {useState} from 'react'
+import PatientLogin from './PatientLogin'
+import './PatientPortal.css'
 
-function DonorPortal() {
+
+function PatientPortal() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [ setUsername] = useState('');
 
@@ -10,18 +11,19 @@ function DonorPortal() {
     setIsLoggedIn(true);
     setUsername(username);
   };
-
   return (
-    <div className="donor-portall">
+    <div className="portal">
       {/* Navbar */}
-      <nav className="sideee-navbar">
+      <nav className="navbar">
         <nl>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#donateblood">Donate Blood</a></li>
+          <li><a href="#home">DONOR DETAILS</a></li>
+          <li><a href="#donateblood">DONOR HISTORY</a></li>
+          <li><a href="#details">HEALTH HISTORY</a></li>
           <li><a href="#donationhistory">Donation History</a></li>
           <li><a href="#bloodrequest">Blood Request</a></li>
         </nl>
       </nav>
+      
 
       {/* Content */}
       <div className="portall-content">
@@ -30,11 +32,21 @@ function DonorPortal() {
           collo
           </div>
         ) : (
-          <DonorLogin onLoginSuccess={handleLoginSuccess} />
+          <PatientLogin onLoginSuccess={handleLoginSuccess} />
         )}
       </div>
+      
+
+
+
+
+
+
+
+
+
     </div>
-  );
+  )
 }
 
-export default DonorPortal;
+export default PatientPortal

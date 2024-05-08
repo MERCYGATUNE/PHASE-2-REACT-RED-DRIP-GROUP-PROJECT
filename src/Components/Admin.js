@@ -59,7 +59,7 @@ function Admin() {
   const renderDonorDetails = () => {
     return (
       <div>
-        <h1 className='ddonar' id='donar'>Donar</h1>
+        <h1 className='ddonar' id='donar'>Donor</h1>
         <table className="donor-details">
           <thead>
             <tr>
