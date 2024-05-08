@@ -1,16 +1,5 @@
-.adminn {
-    margin-left: 600px;
-    margin-top: 200px;
-}
-
-/* Admin.css */
-
 .admin-page {
     display: flex;
-}
-
-.welcomm {
-    margin-top: 200px;
 }
 
 .sidebar {
@@ -19,10 +8,10 @@
     padding: 20px;
     font-size: 30px;
     cursor: pointer;
-    margin-top: 130px;
+    margin-top: 110px;
     z-index: auto;
     margin-left: -200px;
-    position: static;
+    position: fixed;
     transition: margin-left 0.3s ease;
 }
 
@@ -32,35 +21,12 @@
     background-color: rgb(126, 37, 37);
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    padding: 10px 0;
-    cursor: pointer;
-    color: white;
-}
-
-.sidebar ul li:hover {
-    background-color: rgb(218, 66, 124);
-    border-radius: 5px;
-}
-
+/* Main content */
 .main-content {
     flex: 1;
     padding: 20px;
-}
+    margin-left: 200px;
 
-.sidebar ul li:hover {
-    background-color: rgb(218, 66, 124);
-    border-radius: 5px;
-}
-
-.main-content {
-    flex: 1;
-    padding: 20px;
 }
 
 .toppp {
@@ -68,9 +34,7 @@
     margin-left: 300px;
 }
 
-.hhome {
-    margin-top: 30px;
-}
+
 
 /* Card.css */
 .card-container {
@@ -112,19 +76,16 @@
     padding: 20px;
     margin: 10px;
     background-color: pink;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0.1);
     cursor: pointer;
     width: 200px;
     color: white;
 }
 
-/* Admin.css */
-
-/* Sidebar styles remain unchanged */
-
 .main-content {
     flex: 1;
     padding: 20px;
+    margin-top: 200px;
 }
 
 .adminn {

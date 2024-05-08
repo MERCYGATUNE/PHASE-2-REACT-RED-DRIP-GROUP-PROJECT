@@ -1,0 +1,25 @@
+{
+  "donar": [
+    {
+      "id": 1,
+      "name": "collo",
+      "bloodGroup": "A+",
+      "address": "nairobi",
+      "mobile": "071010101"
+    },
+    {
+      "id": 2,
+      "name": "mercy",
+      "bloodGroup": "B-",
+      "address": "westlands ",
+      "mobile": "073824839223"
+    },
+    {
+      "id": 3,
+      "name": "Alice",
+      "bloodGroup": "O+",
+      "address": "kisumu",
+      "mobile": "074223451"
+    }
+  ]
+}
