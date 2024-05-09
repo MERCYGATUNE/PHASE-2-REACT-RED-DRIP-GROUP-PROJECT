@@ -7,7 +7,7 @@ function BloodBankList() {
   const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:9000/data')
+    fetch('http://localhost:3000/data')
       .then(response => response.json())
       .then(data => {
         setData(data);
@@ -38,17 +38,17 @@ function BloodBankList() {
     <div className="card" key={index}>
       <h3 className="cccard-title">{bloodBank.Hospital}</h3>
       <p id='loccation' className="card-content">Location: {bloodBank.location}</p>
-      <p className="card-content">Blood Units in Stock: {bloodBank["Blood Units in Stock in Hospital"]}</p>
+      <p id='stock'className="card-content">Blood Units in Stock: {bloodBank["Blood Units in Stock in Hospital"]}</p>
       <p className="card-content">Pending Requests: {bloodBank["Pending Requests"]}</p>
       <p className="card-content">Rejected Requests: {bloodBank["Rejected Requests"]}</p>
       <p className="card-content">Approved Requests: {bloodBank["Approved Requests"]}</p>
-      <p className="card-content">Donor: {bloodBank.Donor}</p>
+      <p id='donor'className="card-content">Donor: {bloodBank.Donor}</p>
       <p className="card-content">Donor Age: {bloodBank["Donor Age"]}</p>
       <p className="card-content">Request Date: {bloodBank["Request Date"]}</p>
       <p className="card-content">Blood Recipient: {bloodBank["Blood Recipient"]}</p>
       <p className="card-content">Recipient Age: {bloodBank["Recipient Age"]}</p>
       <p className="card-content">Donaters: {bloodBank.Donaters}</p>
-      <p className="card-content">Emergency Contact: {bloodBank["Emergency Contact"]}</p>
+      <p  id='contact' className="card-content">Emergency Contact: {bloodBank["Emergency Contact"]}</p>
       <p className="card-content">Blood Group: {bloodBank["Blood Group"]}</p>
       <img src={bloodBank.image} alt="Blood Bank" className="card-image" />
     </div>

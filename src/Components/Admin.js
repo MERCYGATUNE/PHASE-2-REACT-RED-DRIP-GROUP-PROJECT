@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import AdminLogin from './AdminLogin';
 import './Admin.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Admin() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -111,7 +111,7 @@ function Admin() {
         <ul>
     
           <li><a href='#' onClick={() => scrollToSection('home')}>BLOOD STOCK</a></li>
-          <FontAwesomeIcon icon="fa-solid fa-user" />
+          {/* <FontAwesomeIcon icon='faPerson' /> */}
           <li><a href='#donor' onClick={() => scrollToSection('donor')}>DONORS HISTORY</a></li>
           <li><a href='#blood-request' onClick={() => scrollToSection('blood-request')}>Blood Requests</a></li>
         </ul>

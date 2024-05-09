@@ -44,7 +44,8 @@
 
 .card-content {
     font-size: 16px;
-    color: #666;
+    color:black;
+    font-style: Times New Roman;
 }
 
 .card-image {
@@ -57,9 +58,22 @@
     color: red;
     font-weight: 700;
     font-size: 30px;
+    font-style: Times New Roman;
 }
 
 #loccation {
     font-size: 28px;
     color: black;
+}
+#stock{
+    color:red;
+    font-size: 1em;
+}
+#donor{
+    font-size: 1em;
+    
+}
+#contact{
+    font-size:1em;
+    color:blue;
 }

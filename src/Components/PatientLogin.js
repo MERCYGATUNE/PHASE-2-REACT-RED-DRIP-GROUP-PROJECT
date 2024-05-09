@@ -12,7 +12,7 @@ function PatientLogin({onLoginSucess}) {
       // For simplicity, let's assume successful login if email and password match
       if (username === 'mercy' && password === '123') {
         
-        // onLoginSuccess();
+        onLoginSuccess();
       } else {
         // Display error message if login fails
         setErrorMessage('Invalid email or password');
