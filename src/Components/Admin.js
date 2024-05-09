@@ -3,7 +3,6 @@ import axios from 'axios';
 import AdminLogin from './AdminLogin';
 import './Admin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons'; 
 
 function Admin() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,9 +24,10 @@ function Admin() {
           console.error('Error fetching data:', error);
         });
 
-      axios.get('http://localhost:5000/donorDetails')
-        .then(response => {
-          setDonorDetails(response.data); 
+      fetch('http://localhost:2000/donar') // Assuming donorDetails.json is in public folder
+        .then(response => response.json())
+        .then(data => {
+          setDonorDetails(data); 
         })
         .catch(error => {
           console.error('Error fetching donor details:', error);
@@ -51,33 +51,39 @@ function Admin() {
 
   // Function to handle delete action
   const handleDelete = (id) => {
-    // Logic to handle delete action
-    console.log(`Deleting donor with ID: ${id}`);
+    // Logic to delete a donor by ID
+    const updatedDonorDetails = donorDetails.filter(detail => detail.id !== id);
+    setDonorDetails(updatedDonorDetails);
   };
 
   // Render donor details table
   const renderDonorDetails = () => {
     return (
       <div>
+<<<<<<< HEAD
         <h1 className='ddonar' id='donar'>Donor</h1>
+=======
+        <h1 className='ddonar' id='donar'>Donars history</h1>
+>>>>>>> d95af75307a16ca7770199407e1e1a44789b9d0d
         <table className="donor-details">
           <thead>
             <tr>
               <th>Name</th>
-              <th>Profile</th>
               <th>Blood Group</th>
               <th>Address</th>
-              <th>Mobile</th>
+              <th>hospital</th>
+              <th>mobile</th>
               <th>Action</th>
+              
             </tr>
           </thead>
           <tbody>
             {donorDetails.map((detail, index) => (
               <tr key={index}>
                 <td>{detail.name}</td>
-                <td>{detail.profile}</td>
                 <td>{detail.bloodGroup}</td>
                 <td>{detail.address}</td>
+                <td>{detail.hospital}</td>
                 <td>{detail.mobile}</td>
                 <td>
                   <button onClick={() => handleEdit(detail.id)}>Edit</button>
@@ -108,33 +114,22 @@ function Admin() {
     <div className="admin-page">
       <div className={`sidebar ${isSidebarVisible ? 'visible' : ''}`}>
         <ul>
-          <li><FontAwesomeIcon icon={faHouse} /></li> 
-          <li><a href='#' onClick={() => scrollToSection('home')}>Home</a></li>
+    
+          <li><a href='#' onClick={() => scrollToSection('home')}>BLOOD STOCK</a></li>
           <FontAwesomeIcon icon="fa-solid fa-user" />
-          <li><a href='#donor' onClick={() => scrollToSection('donor')}>Donor</a></li>
-          <FontAwesomeIcon icon="fa-solid fa-bed" />
-          <li><a href='#patient' onClick={() => scrollToSection('patient')}>Patient</a></li>
-          <h1 className='bloood'>&#x1FA78;</h1>
-          <li><a href='#donation' onClick={() => scrollToSection('donation')}>Donations</a></li>
-          <FontAwesomeIcon icon="fa-solid fa-hand-holding-droplet" />
+          <li><a href='#donor' onClick={() => scrollToSection('donor')}>DONORS HISTORY</a></li>
           <li><a href='#blood-request' onClick={() => scrollToSection('blood-request')}>Blood Requests</a></li>
-          <FontAwesomeIcon icon="fa-solid fa-recycle" />
-          <li><a href='#history' onClick={() => scrollToSection('history')}>History</a></li>
-          <FontAwesomeIcon icon="fa-solid fa-user" />
-          <li><a href='#blood-stock' onClick={() => scrollToSection('blood-stock')}>Blood Stock</a></li>
         </ul>
       </div>
       <div className="main-content">
-        <h1 className='adminn' id='home'>Admin Dashboard</h1>
         {isLoggedIn ? (
           <div className='homee' id='home'>
-            <p className='hhome' id='home'>Admin</p>
             <h2 className='welcomm'>Welcome to the Admin Dashboard</h2>
             <div className="card-container">
               {cardsData.map((card, index) => (
                 <div className="card" key={index}>
                   <h3 className="card-title">{card.title}</h3>
-                  <p className="card-content">Number: {card.number}</p>
+                  <p className="card-content">blood in stock: {card.number}</p>
                 </div>
               ))}
               <div className="card">
