@@ -8,7 +8,7 @@ function Admin() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [cardsData, setCardsData] = useState([]);
   const [donorDetails, setDonorDetails] = useState([]);
-  const [isSidebarVisible, setIsSidebarVisible] = useState(false); // State to track sidebar visibility
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   const handleLoginSuccess = () => {
     setIsLoggedIn(true);
@@ -24,7 +24,7 @@ function Admin() {
           console.error('Error fetching data:', error);
         });
 
-      fetch('http://localhost:2000/donar') // Assuming donorDetails.json is in public folder
+      fetch('http://localhost:2000/donar') 
         .then(response => response.json())
         .then(data => {
           setDonorDetails(data); 
@@ -35,17 +35,16 @@ function Admin() {
     }
   }, [isLoggedIn]);
 
-  // Add an empty card object
   useEffect(() => {
     setCardsData(prevData => [...prevData, {}]);
   }, []);
 
-  // Calculate total number
+
   const totalNumber = cardsData.reduce((acc, card) => acc + (card.number || 0), 0);
 
-  // Function to handle edit action
+
   const handleEdit = (id) => {
-    // Logic to handle edit action
+   
     console.log(`Editing donor with ID: ${id}`);
   };
 
