@@ -1,41 +1,43 @@
-import{useState} from 'react'
-import './PatientLogin.css'
+import React, { useState } from 'react';
+import './PatientLogin.css';
 
-function PatientLogin({onLoginSucess}) {
+function PatientLogin({ onLoginSuccess }) {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
-    const [username, setusername] = useState('');
-    const [password, setPassword] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
-  
-    const handleLogin = () => {
-      // Perform validation and authentication
-      // For simplicity, let's assume successful login if email and password match
-      if (username === 'mercy' && password === '123') {
-        
-        onLoginSuccess();
-      } else {
-        // Display error message if login fails
-        setErrorMessage('Invalid email or password');
-      }
-    };
+  const handleLogin = () => {
+    // Perform validation and authentication
+    // For simplicity, let's assume successful login if username and password match
+    const validUsers = ['mercy', 'collo', 'EW'];
+    const validPasswords = ['123', 'collo123', 'Z'];
 
+    // Check if username and password match any valid combination
+    const isValidCombination = validUsers.includes(username) && validPasswords.includes(password);
+
+    if (isValidCombination) {
+      onLoginSuccess();
+    } else {
+      // Display error message if login fails
+      setErrorMessage('Invalid username or password');
+    }
+  };
 
   return (
-    <div className='patient'>
-    <div className='login'>
-    <h2 className="logintitle">PATIENT LOGIN</h2>
-      <div className="input">
-        <label  className='label'htmlFor="username">USERNAME:</label>
+    <div className="patient-login-container">
+      <h2 className="patient-login-title">PATIENT LOGIN</h2>
+      <div className="input-group">
+        <label htmlFor="username">USERNAME:</label>
         <input
-          type="username"
+          type="text"
           id="username"
           placeholder="Enter your username"
           value={username}
-          onChange={(e) => setusername(e.target.value)}
+          onChange={(e) => setUsername(e.target.value)}
         />
       </div>
-      <div className="inputGroup">
-        <label className='label'htmlFor="password">PASSWORD:</label>
+      <div className="input-group">
+        <label htmlFor="password">PASSWORD:</label>
         <input
           type="password"
           id="password"
@@ -46,15 +48,8 @@ function PatientLogin({onLoginSucess}) {
       </div>
       {errorMessage && <p className="error-message">{errorMessage}</p>}
       <button className="login-button" onClick={handleLogin}>Login</button>
-       </div>
-
-
-
-
-
-
     </div>
-  )
+  );
 }
 
-export default PatientLogin
+export default PatientLogin;

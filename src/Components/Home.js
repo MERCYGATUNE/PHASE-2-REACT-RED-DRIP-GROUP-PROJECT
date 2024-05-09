@@ -8,7 +8,7 @@ function Home() {
       <section className="hero">
         <img id='nursee' src={nurseImage} alt="nurse" />
         <p className='paragraph'>
-        ""Welcome to Red Drip, where every drop counts! Our blood donation website is designed to make saving lives as simple as possible. Here, you'll find everything you need to know about donating blood and the profound impact it can have.
+        ""Welcome to Red Drip; where every drop counts! Our blood donation website is designed to make saving lives as simple as possible. Here, you'll find everything you need to know about donating blood and the profound impact it can have.
 
 Discover the power of your generosity by learning about the importance of blood donation, eligibility requirements, and the life-changing difference your donation can make. With just a few clicks, you can locate nearby donation centers or events, book your donation appointment, and keep track of your donation history effortlessly.
 
@@ -20,13 +20,13 @@ Embark on your journey with us today and become a hero in someone's story. Your 
         
         
         <div className="hero-content">
-          <h1>REACH US ON:</h1>
+          <h1 className='reach'>REACH US ON:</h1>
           <div>
-            <h2> Whatsapp</h2> 
-            <p>0707499607</p>
+            <h2 className='whatsapp'> Whatsapp</h2> 
+            <p className='namba'>0707499607</p>
           </div>
           <div>
-            <h3> Instagram</h3> 
+            <h3 className='ig'> Instagram</h3> 
             <p>@_reddrip</p>
           </div>
         </div>
