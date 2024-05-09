@@ -7,9 +7,11 @@ const HotlineButton = ({ phoneNumber }) => {
   };
 
   return (
+  
     <button onClick={handleButtonClick}>
       Hotline: {phoneNumber}
     </button>
+    
   );
 };
 

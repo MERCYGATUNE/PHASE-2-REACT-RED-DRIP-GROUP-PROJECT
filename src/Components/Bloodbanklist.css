@@ -64,6 +64,7 @@
 #loccation {
     font-size: 28px;
     color: black;
+    text-decoration:underline;
 }
 
 #stock {
