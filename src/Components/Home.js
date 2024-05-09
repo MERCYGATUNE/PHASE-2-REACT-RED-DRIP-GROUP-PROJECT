@@ -1,4 +1,4 @@
-import nurseImage from '../assets/nurse1.jpeg';
+import nurseImage from '../assets/fnurse3.png';
 import './Home.css';
 import HotlineButton from './HotlineButton';
 

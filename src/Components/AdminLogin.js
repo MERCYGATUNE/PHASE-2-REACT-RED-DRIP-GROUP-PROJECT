@@ -6,16 +6,13 @@ function AdminLogin({ onLoginSuccess }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-
   const handleLogin = () => {
-    if (username === 'collo' && password === 'collo123') {
-      // Redirect to admin dashboard upon successful login
+    if (username === 'collo','sdf' && password === 'collo123','SD') {
       onLoginSuccess();
     } else {
       setErrorMessage('Invalid username or password');
     }
   };
-
   return (
     <div className="login-container">
       <h2 className='admin-login'>Admin Login</h2>
@@ -29,7 +26,7 @@ function AdminLogin({ onLoginSuccess }) {
           onChange={(e) => setUsername(e.target.value)}
         />
       </div>
-      <div className="input-group">
+        <div className="input-group">
         <label htmlFor="password">Password:</label>
         <input
           type="password"

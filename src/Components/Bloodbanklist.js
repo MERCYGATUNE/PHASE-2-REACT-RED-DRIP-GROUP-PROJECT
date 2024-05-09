@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Bloodbanklist.css'
+import nurseImage from '../assets/fnurse4.png';
+import nurseImagee from '../assets/fnurse2.png';
 
 function BloodBankList() {
   const [data, setData] = useState([]);
@@ -7,23 +9,23 @@ function BloodBankList() {
   const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/data')
+    fetch('http://localhost:9000/data')
       .then(response => response.json())
       .then(data => {
         setData(data);
-        setFilteredData(data); // Initially set filtered data to all data
+        setFilteredData(data); 
       })
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
-  // Function to handle search input change
+
   const handleSearchChange = event => {
     const query = event.target.value;
     setSearchQuery(query);
     filterData(query);
   };
 
-  // Function to filter data based on search query
+
   const filterData = query => {
     const filtered = data.filter(bloodBank => {
       const locationMatch = bloodBank.location.toLowerCase().includes(query.toLowerCase());
@@ -33,7 +35,7 @@ function BloodBankList() {
     setFilteredData(filtered);
   };
 
-  // Map over the filtered data array and create a card for each blood bank
+
   const bloodBanks = filteredData.map((bloodBank, index) => (
     <div className="card" key={index}>
       <h3 className="cccard-title">{bloodBank.Hospital}</h3>
@@ -56,7 +58,7 @@ function BloodBankList() {
 
   return (
     <div className="blood-bank-list">
-      {/* Search input */}
+   
       <div className="search-container">
         <input
           type="text"
@@ -66,8 +68,8 @@ function BloodBankList() {
           className="search-input"
         />
       </div>
-
-      {/* Display blood banks */}
+      <img className='fnurse4' id='nursee' src={nurseImage} alt="nurse" />
+       <img className='fnurse2' id='nurseey' src={nurseImagee} alt="nurse" />
       <div className="card-container">
         {bloodBanks}
       </div>

@@ -5,18 +5,14 @@ function Searchbar({data}) {
 
       const [searchQuery, setSearchQuery] = useState('');
       const [searchResults, setSearchResults] = useState([]);
-    
-      // Function to handle changes in the search query
+
       const handleSearch = (e) => {
         const query = e.target.value;
         setSearchQuery(query);
-    
-        // Filter data based on the search query
+
         const filteredData = data.filter(item =>
           item.toLowerCase().includes(query.toLowerCase())
         );
-    
-        // Update search results
         setSearchResults(filteredData);
       };
     

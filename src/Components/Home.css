@@ -10,7 +10,7 @@ Header {
 }
 
 body {
-    background-color: rgb(240, 148, 162);
+    background-image: url();
 }
 
 .paragraph {
@@ -19,7 +19,7 @@ body {
     margin-top: -600px;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-     
+
 }
 
 .hero-content {
@@ -36,6 +36,7 @@ header {
     position: fixed;
     margin-top: 330px;
 }
-.reach{
-    color:white;
+
+.reach {
+    color: white;
 }

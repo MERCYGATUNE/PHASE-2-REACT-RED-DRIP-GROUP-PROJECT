@@ -44,7 +44,7 @@
 
 .card-content {
     font-size: 16px;
-    color:black;
+    color: black;
     font-style: Times New Roman;
 }
 
@@ -65,15 +65,35 @@
     font-size: 28px;
     color: black;
 }
-#stock{
-    color:red;
+
+#stock {
+    color: red;
     font-size: 1em;
 }
-#donor{
+
+#donor {
     font-size: 1em;
-    
+
 }
-#contact{
-    font-size:1em;
-    color:blue;
+
+#contact {
+    font-size: 1em;
+    color: blue;
+}
+
+.fnurse4 {
+    width: 100vmax;
+    height: 100vmax;
+    margin-bottom: -500px;
+    margin-left: -390px;
+    padding-left: 60px;
+
+}
+
+#nurseey {
+    width: 50vmax;
+    height: 60vmax;
+    margin-bottom: -500px;
+    margin-left: 150px;
+    padding-left: 60px;
 }

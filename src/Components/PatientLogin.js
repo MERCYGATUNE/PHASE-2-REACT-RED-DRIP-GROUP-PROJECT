@@ -1,25 +1,15 @@
-// In PatientLogin.js
 import React, { useState } from 'react';
 import './Patientlogin.css';
+
 function PatientLogin({ onLoginSuccess }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = () => {
-    // Perform validation and authentication
-    // For simplicity, let's assume successful login if username and password match
-    const validUsers = ['mercy', 'collo', 'EW'];
-    const validPasswords = ['123', 'collo123', 'Z'];
-
-    // Check if username and password match any valid combination
-    const isValidCombination = validUsers.includes(username) && validPasswords.includes(password);
-
-    if (isValidCombination) {
-      // Call onLoginSuccess with a parameter indicating success
+    if (username === 'collo','dsv' && password === 'collo123','sd') {
       onLoginSuccess(true);
     } else {
-      // Display error message if login fails
       setErrorMessage('Invalid username or password');
     }
   };

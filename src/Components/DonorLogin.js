@@ -7,18 +7,15 @@ function DonorLogin({ onLoginSuccess }) {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = () => {
-    // Perform validation and authentication
-    // For simplicity, let's assume successful login if email and password match
     if (username === 'collo','EW' && password === 'collo123','Z') {
       
       onLoginSuccess();
     } else {
-      // Display error message if login fails
       setErrorMessage('Invalid email or password');
     }
   };
-
   return (
+    
     <div className="loggin-container">
       <h2 className="donor-login-title">DONOR LOGIN</h2>
       <div className="input-group">
@@ -41,10 +38,10 @@ function DonorLogin({ onLoginSuccess }) {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      {errorMessage && <p className="error-message">{errorMessage}</p>}
+  {/*      
+      {errorMessage && <p className="error-message">{errorMessage}</p>} */}
       <button className="login-button" onClick={handleLogin}>Login</button>
     </div>
   );
 }
-
 export default DonorLogin;

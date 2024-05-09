@@ -12,7 +12,7 @@
 }
 
 .porrtal-header {
-    margin-left: 600px;
+    margin-left: 60px;
     margin-top: 200px;
     font-size: 30px;
 }
@@ -25,7 +25,7 @@
     cursor: pointer;
     margin-top: 100px;
     z-index: 1000;
-    margin-left: -310px;
+    margin-left: -910px;
     position: fixed;
     transition: margin-left 0.3s ease;
     color: aliceblue;
@@ -123,10 +123,10 @@ nav li a {
 .blloood {
     margin-left: 100px;
     margin-top: 50px;
-    /* Adjusted margin-top value */
+
     font-size: 30px;
     color: rgba(0, 0, 0, 0);
-    /* Change text color to black */
+
 }
 
 .bld {
@@ -187,14 +187,15 @@ nav li a {
 .donation-history-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 0px;
+    margin-top: 500px;
+    position: static;
 }
 
 /* Style for table header */
 .donation-history-table th {
     border: 1px solid #ccc;
     padding: 8px;
-    width: 100%;
+    width: 10%;
 }
 
 .donation-history-table td {
@@ -210,4 +211,69 @@ nav li a {
 /* Style for even rows */
 .donation-history-table tbody tr:nth-child(even) {
     background-color: #ffffff;
+}
+
+.logout-btn {
+    margin-top: -300px;
+    margin-left: 100px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background-color: pink;
+    border-radius: 5px;
+    top: 200px;
+
+}
+
+.logout-btn:hover {
+    background-color: #dd1d67;
+    transition: 0.7s;
+}
+
+
+.mmm {
+    margin-top: 370px;
+}
+
+.ddd {
+    background-color: pink;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background-color: pink;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.ddd:hover {
+    background-color: #dd1d67;
+    transition: 0.7s;
+}
+
+/* DonorsPortal.css */
+
+.donor-portal {
+    width: 20%;
+    height: 10px;
+    background-image: url('../assets/fnurse1.png');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    padding-bottom: 1000px;
+    margin-left: -40px;
+    padding-left: 560px;
+}
+
+.mmmmm {
+    margin-right: -500px;
+}
+
+#yy {
+    right: 100px;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
