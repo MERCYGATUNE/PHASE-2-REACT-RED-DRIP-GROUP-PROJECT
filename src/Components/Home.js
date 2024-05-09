@@ -26,6 +26,7 @@ Start your journey with us today and be a hero in someone's story. Thank you for
             <h4> Instagram</h4> 
             <p>@_reddrip</p>
           </div>
+          <h3>Hotline</h3>
           {/* Include the HotlineButton component */}
           <HotlineButton phoneNumber="+254707499607" />
         </div>
