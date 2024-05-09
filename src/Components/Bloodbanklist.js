@@ -69,7 +69,6 @@ function BloodBankList() {
         />
       </div>
       <img className='fnurse4' id='nursee' src={nurseImage} alt="nurse" />
-       <img className='fnurse2' id='nurseey' src={nurseImagee} alt="nurse" />
       <div className="card-container">
         {bloodBanks}
       </div>
