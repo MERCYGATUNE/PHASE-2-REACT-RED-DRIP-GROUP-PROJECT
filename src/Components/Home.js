@@ -1,6 +1,7 @@
+import React from 'react';
 import nurseImage from '../assets/nurse1.jpeg';
+import HotlineButton from './HotlineButton'; // Import the HotlineButton component
 import './Home.css';
-
 
 function Home() {
   return (
@@ -14,16 +15,19 @@ Discover the power you hold to make a difference by learning about the importanc
 Join us in our mission to ensure a steady supply of blood for patients in hospitals and medical facilities. Your donation can make a life-saving difference for someone in need. Together, we can make a positive impact on the lives of others.
 
 Start your journey with us today and be a hero in someone's story. Thank you for your generosity and willingness to give the gift of life."</p>
+
         <div className="hero-content">
           <h1>Reach Us On</h1>
           <div>
             <h2> Whatsapp</h2> 
-            <p>0707499607</p>
+            <p>+254707499607</p>
           </div>
           <div>
-            <h3> Instagram</h3> 
+            <h4> Instagram</h4> 
             <p>@_reddrip</p>
           </div>
+          {/* Include the HotlineButton component */}
+          <HotlineButton phoneNumber="+254707499607" />
         </div>
       </section>
     </div>
