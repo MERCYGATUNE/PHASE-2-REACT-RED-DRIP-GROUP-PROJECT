@@ -33,35 +33,38 @@ function DonorPortal() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Blood Group:", bloodGroup);
-    console.log("Unit:", unit);
-    console.log("Disease:", disease);
-    console.log("Age:", age);
+  e.preventDefault();
+  // Handle form submission here
+  console.log("Blood Group:", bloodGroup);
+  console.log("Unit:", unit);
+  console.log("Disease:", disease);
+  console.log("Age:", age);
 
-    // Update donor history with new donation
-    const newDonation = {
-      bloodGroup,
-      unit,
-      disease,
-      age,
-      status: 'Pending' // Initial status
-    };
-
-    setDonorHistory([...donorHistory, newDonation]);
-
-    // Clear form fields after submission
-    setBloodGroup('');
-    setUnit('');
-    setDisease('');
-    setAge('');
+  // Update donor history with new donation
+  const newDonation = {
+    bloodGroup,
+    unit,
+    disease,
+    age,
+    status: 'accepted' 
   };
+
+  setDonorHistory([...donorHistory, newDonation]);
+
+  // Clear form fields after submission
+  setBloodGroup('');
+  setUnit('');
+  setDisease('');
+  setAge('');
+
+  // Display window alert
+  window.alert('Successfully requested. Please visit the hospital tab for more information and hospital information.');
+};
 
   return (
     <div className="donor-portal">
       <nav className="side-navbar">
-          <li><a href="#home">Home</a></li>
+        
           <li><a href="#donateblood">Donate Blood</a></li>
           <li><a href="#donationhistory">Donation History</a></li>
       </nav>
@@ -69,7 +72,7 @@ function DonorPortal() {
         <div className="portal-content">
           {isLoggedIn ? (
             <div className="portal-header">
-              <a className="hoomee">Home</a>
+            
               <div className="cardi-container">
                 <div className="cardi">Pending Request</div>
                 <div className="cardi">Approved Request</div>
@@ -97,7 +100,7 @@ function DonorPortal() {
                   <input type="number" id="unit" value={unit} onChange={handleUnitChange} />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="disease">Disease:</label>
+                  <label htmlFor="disease">name:</label>
                   <input type="text" id="disease" value={disease} onChange={handleDiseaseChange} />
                 </div>
                 <div className="form-group">
@@ -119,7 +122,7 @@ function DonorPortal() {
                     <th style={{ border: '1px solid #dddddd', textAlign: 'left', padding: '8px' }}>Age</th>
                     <th style={{ border: '1px solid #dddddd', textAlign: 'left', padding: '8px' }}>Blood Group</th>
                     <th style={{ border: '1px solid #dddddd', textAlign: 'left', padding: '8px' }}>Unit (ml)</th>
-                    <th style={{ border: '1px solid #dddddd', textAlign: 'left', padding: '8px' }}>Disease</th>
+                    <th style={{ border: '1px solid #dddddd', textAlign: 'left', padding: '8px' }}>name</th>
                     <th style={{ border: '1px solid #dddddd', textAlign: 'left', padding: '8px' }}>Status</th>
                   </tr>
                 </thead>

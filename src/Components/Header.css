@@ -1,13 +1,24 @@
 /* Header.css */
+<<<<<<< HEAD
+header {
+    background-color: #58262609;
+=======
 .head {
     background-color: #582626;
+>>>>>>> d95af75307a16ca7770199407e1e1a44789b9d0d
     color: #fff;
     padding: 4px;
     display: flex;
     justify-content: flex-end;
     position: fixed;
+<<<<<<< HEAD
+    top: 10vmin;
+    width:100%;
+
+=======
     top: 13vmin;
     width: 100%;
+>>>>>>> d95af75307a16ca7770199407e1e1a44789b9d0d
 
 }
 
@@ -45,7 +56,7 @@ nav ul li a:hover {
 .drip {
     color: red;
     font-size: 40px;
-    margin-right: 600px;
+    margin-right: 290px;
 }
 
 .logo {

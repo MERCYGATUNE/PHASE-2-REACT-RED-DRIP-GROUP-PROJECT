@@ -104,7 +104,7 @@ nav li a {
     align-items: center;
     height: 100vh;
     margin-left: 600px;
-    margin-top: 700px;
+    margin-top: 170px;
 }
 
 .portal-content {
@@ -113,7 +113,7 @@ nav li a {
 }
 
 .formm-group {
-    margin-top: 400px;
+    margin-top: 10px;
 }
 
 #home {
@@ -179,4 +179,35 @@ nav li a {
     /* Added border-radius */
     border: 1px solid #ccc;
     /* Added border */
+}
+
+/* In your DonorsPortal.css file */
+
+/* Style for the table */
+.donation-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+}
+
+/* Style for table header */
+.donation-history-table th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+}
+
+.donation-history-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+/* Style for odd rows */
+.donation-history-table tbody tr:nth-child(odd) {
+    background-color: #dd1d67;
+}
+
+/* Style for even rows */
+.donation-history-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
 }
