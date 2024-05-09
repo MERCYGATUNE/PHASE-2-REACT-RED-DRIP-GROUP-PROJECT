@@ -60,11 +60,7 @@ function Admin() {
   const renderDonorDetails = () => {
     return (
       <div>
-<<<<<<< HEAD
-        <h1 className='ddonar' id='donar'>Donor</h1>
-=======
         <h1 className='ddonar' id='donar'>Donars history</h1>
->>>>>>> d95af75307a16ca7770199407e1e1a44789b9d0d
         <table className="donor-details">
           <thead>
             <tr>
