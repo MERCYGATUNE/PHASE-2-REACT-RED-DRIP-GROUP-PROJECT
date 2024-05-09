@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
@@ -6,9 +7,8 @@ import DonorsPortal from './Components/DonorsPortal';
 import Admin from './Components/Admin'; 
 import Bloodbanklist from './Components/Bloodbanklist';
 import PatientPortal from './Components/PatientPortal';
-//import PatientLogin from './Components/PatientLogin';
 
-// Render the application routes using React Router
+
 function App() {
   return (
     
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/patient" element={<PatientPortal />} />
           <Route path="/donor" element={<DonorsPortal />} /> 
-          <Route path="/admin" element={<Admin />} /> {/* Updated to use the correct component */}
+          <Route path="/admin" element={<Admin />} />
           <Route path="/" element={<Home />} />
            <Route path="/bloodbanks" element={<Bloodbanklist />} />
         </Routes>
