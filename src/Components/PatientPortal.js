@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import PatientLogin from './PatientLogin';
 import './PatientPortal.css';
@@ -11,25 +12,11 @@ function ParentComponent() {
 
   return (
     <div>
-      {isLoggedIn ? 
+      {isLoggedIn ? (
         <div>
           <h2 className='weeeelcome'>Welcome to the Patient Portal</h2>
-          <h1 className='patient' id='patient'> history</h1>
-        <table className="patient-details"></table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Blood Group</th>
-              <th>Address</th>
-              <th>health history</th>
-              <th>mobile</th>
-              <th>Action</th>
-              
-            </tr>
-          </thead>
-          
         </div>
-       : (
+      ) : (
         <PatientLogin onLoginSuccess={handleLoginSuccess} />
       )}
     </div>
