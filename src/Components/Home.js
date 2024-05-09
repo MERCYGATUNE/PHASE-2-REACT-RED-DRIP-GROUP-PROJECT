@@ -1,6 +1,6 @@
 import nurseImage from '../assets/nurse1.jpeg';
 import './Home.css';
-
+import HotlineButton from './HotlineButton';
 
 function Home() {
   return (
@@ -23,6 +23,7 @@ Start your journey with us today and be a hero in someone's story. Thank you for
           <div>
             <h3> Instagram</h3> 
             <p>@_reddrip</p>
+            <HotlineButton phoneNumber="0707499607" />
           </div>
         </div>
       </section>

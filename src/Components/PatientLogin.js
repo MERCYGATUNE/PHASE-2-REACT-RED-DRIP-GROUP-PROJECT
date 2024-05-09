@@ -1,6 +1,6 @@
+// In PatientLogin.js
 import React, { useState } from 'react';
-import './PatientLogin.css';
-
+import './Patientlogin.css';
 function PatientLogin({ onLoginSuccess }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -16,7 +16,8 @@ function PatientLogin({ onLoginSuccess }) {
     const isValidCombination = validUsers.includes(username) && validPasswords.includes(password);
 
     if (isValidCombination) {
-      onLoginSuccess();
+      // Call onLoginSuccess with a parameter indicating success
+      onLoginSuccess(true);
     } else {
       // Display error message if login fails
       setErrorMessage('Invalid username or password');
@@ -25,7 +26,7 @@ function PatientLogin({ onLoginSuccess }) {
 
   return (
     <div className="patient-login-container">
-      <h2 className="patient-login-title">PATIENT LOGIN</h2>
+      <h2 className="pattient-login-title">PATIENT LOGIN</h2>
       <div className="input-group">
         <label htmlFor="username">USERNAME:</label>
         <input
