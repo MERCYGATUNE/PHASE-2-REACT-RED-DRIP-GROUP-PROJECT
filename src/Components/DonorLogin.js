@@ -7,8 +7,7 @@ function DonorLogin({ onLoginSuccess }) {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = () => {
-    // Perform validation and authentication
-    // For simplicity, let's assume successful login if email and password match
+    // Perform validation
     if (username === 'collo','EW' && password === 'collo123','Z') {
       
       onLoginSuccess();

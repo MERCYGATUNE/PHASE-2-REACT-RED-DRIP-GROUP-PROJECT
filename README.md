@@ -1,3 +1,24 @@
+## RED-DRIP BLOOD BANK APP
+
+## DATE: 2024/05/09
+
+## AUTHOR : GROUP 2 (MERCY GATUNE,COLLINS NJUGUNA, HAWI ONYANGO ,STEPHEN MUNYI,ALEX GATHECHA)
+
+## DESCRIPTION
+ # Empowering Blood Donation Ecosystem: Our Blood Bank Management App revolutionizes the way blood donation centers operate, ensuring seamless coordination between donors, recipients, and healthcare institutions. With a user-friendly interface and robust features, the app facilitates every aspect of blood management, from donor registration to real-time inventory tracking and swift distribution. Donors can easily register, schedule appointments, and receive notifications, fostering a culture of regular donation. For blood banks, the app streamlines inventory management, automates donor screening, and provides analytics for informed decision-making. Healthcare providers gain instant access to available blood units, enabling timely responses to emergencies. With its intuitive design and advanced functionalities, our app ensures an efficient, transparent, and lifesaving blood donation ecosystem.
+
+### INSTALLATION
+Use the git clone command on your terminal to download the contents.
+# In the directory run :
+
+# `npm install react-scripts--save
+Used to install the react -scriipts package as a
+dependency for a React project.
+# `npm install axios 
+Used to install Axios library via npm.Its used for making HTTP requests from browsers.
+# `npm install react-router-dom
+Used to install packages that provide routing capabilities for React applications when using the DOM.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -13,6 +34,25 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+## INSTALLATION REQUIREMENTS
+Git
+
+## Live Site
+(https://    xy.com)
+
+## TECHNOLOGY USED
+REACT
+
+## CONTACT INFORMATION
+You can reach me on ariri691@gmail.com
+## LICENSE
+MIT LICENSE
+copy right
+
+## IN THE DIRECTORY ,RUN :
+
+
 
 ### `npm test`
 
