@@ -36,6 +36,8 @@ function ParentComponent() {
       setFormData({
         name: '',
         bloodGroup: '',
+        ALLERGIES: '',
+        HIVSTATUS: '',
         address: '',
         hospital: '',
         mobile: ''
