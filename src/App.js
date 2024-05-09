@@ -6,7 +6,7 @@ import DonorsPortal from './Components/DonorsPortal';
 import Admin from './Components/Admin'; 
 import Bloodbanklist from './Components/Bloodbanklist';
 import PatientPortal from './Components/PatientPortal';
-
+//import PatientLogin from './Components/PatientLogin';
 
 // Render the application routes using React Router
 function App() {
