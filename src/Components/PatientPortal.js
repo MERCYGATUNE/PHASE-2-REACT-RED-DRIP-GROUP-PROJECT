@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import PatientLogin from './PatientLogin';
 import './PatientPortal.css';
 
-function ParentComponent() {
+function PatientPortal() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -46,83 +45,84 @@ function ParentComponent() {
   };
 
   return (
-    <div>
-      {isLoggedIn ? (
-        <div>
-          <h2 className='weeeelcome'>Welcome to the Patient Portal</h2>
-          {admitted ? (
-            <p className="success-message">Admitted successfully!</p>
-          ) : (
-            <div className="data-container">
-              <h3>Enter Patient Information</h3>
-              <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                />
-                <label htmlFor="bloodGroup">Blood Group:</label>
-                <input
-                  type="text"
-                  id="bloodGroup"
-                  name="bloodGroup"
-                  value={formData.bloodGroup}
-                  onChange={handleChange}
-                />
-                 <label htmlFor="ALLERGIES">ALLERGIES:</label>
-                <input
-                  type="text"
-                  id="ALLERGIES"
-                  name="ALLERGIES"
-                  value={formData.ALLERGIES}
-                  onChange={handleChange}
-                />
-               <label htmlFor="HIV STATUS">HIV STATUS:</label>
-                <input
-                  type="text"
-                  id="HIV STATUS"
-                  name="HIV STATUS"
-                  value={formData.HIVSTATUS}
-                  onChange={handleChange}
-                />
-                <label htmlFor="address">Address:</label>
-                <input
-                  type="text"
-                  id="address"
-                  name="address"
-                  value={formData.address}
-                  onChange={handleChange}
-                />
-                <label htmlFor="hospital">Hospital:</label>
-                <input
-                  type="text"
-                  id="hospital"
-                  name="hospital"
-                  value={formData.hospital}
-                  onChange={handleChange}
-                />
-                <label htmlFor="mobile">Mobile:</label>
-                <input
-                  type="text"
-                  id="mobile"
-                  name="mobile"
-                  value={formData.mobile}
-                  onChange={handleChange}
-                />
-                <button type="submit">Submit</button>
-              </form>
-            </div>
-          )}
-        </div>
-      ) : (
-        <PatientLogin onLoginSuccess={handleLoginSuccess} />
-      )}
+    <div className="patient-portal-container">
+      <div className="vertical-content">
+        {isLoggedIn ? (
+          <div>
+            <h2 className='portal-welcome'>Welcome to the Patient Portal</h2>
+            {admitted ? (
+              <p className="success-message">Admitted successfully!</p>
+            ) : (
+              <div className="patient-form-container">
+                <h3>Enter Patient Information</h3>
+                <form onSubmit={handleSubmit}>
+                  <label htmlFor="name">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="bloodGroup">Blood Group:</label>
+                  <input
+                    type="text"
+                    id="bloodGroup"
+                    name="bloodGroup"
+                    value={formData.bloodGroup}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="ALLERGIES">ALLERGIES:</label>
+                  <input
+                    type="text"
+                    id="ALLERGIES"
+                    name="ALLERGIES"
+                    value={formData.ALLERGIES}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="HIV STATUS">HIV STATUS:</label>
+                  <input
+                    type="text"
+                    id="HIV STATUS"
+                    name="HIV STATUS"
+                    value={formData.HIVSTATUS}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="address">Address:</label>
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    value={formData.address}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="hospital">Hospital:</label>
+                  <input
+                    type="text"
+                    id="hospital"
+                    name="hospital"
+                    value={formData.hospital}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="mobile">Mobile:</label>
+                  <input
+                    type="text"
+                    id="mobile"
+                    name="mobile"
+                    value={formData.mobile}
+                    onChange={handleChange}
+                  />
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            )}
+          </div>
+        ) : (
+          <PatientLogin onLoginSuccess={handleLoginSuccess} />
+        )}
+      </div>
     </div>
   );
 }
 
-export default ParentComponent;
-
+export default PatientPortal;

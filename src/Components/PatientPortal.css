@@ -1,4 +1,29 @@
-.weeeelcome {
-    margin-top: 140px;
-    margin-left: 600px;
+.patient-portal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.vertical-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portal-welcome {
+    color: #333;
+}
+
+.patient-form-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
 }
