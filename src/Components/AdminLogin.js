@@ -8,7 +8,7 @@ function AdminLogin({ onLoginSuccess }) {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = () => {
-    if (username === 'collo' && password === 'collo123') {
+    if (username === 'collo', 'hawi' && password === 'collo123','hawi123') {
       // Redirect to admin dashboard upon successful login
       onLoginSuccess();
     } else {
