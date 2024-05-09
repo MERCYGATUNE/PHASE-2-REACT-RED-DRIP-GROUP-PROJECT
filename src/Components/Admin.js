@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import AdminLogin from './AdminLogin';
 import './Admin.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Admin() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [cardsData, setCardsData] = useState([]);
   const [donorDetails, setDonorDetails] = useState([]);
-  const [isSidebarVisible, setIsSidebarVisible] = useState(false); // State to track sidebar visibility
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   const handleLoginSuccess = () => {
     setIsLoggedIn(true);
@@ -24,7 +24,7 @@ function Admin() {
           console.error('Error fetching data:', error);
         });
 
-      fetch('http://localhost:2000/donar') // Assuming donorDetails.json is in public folder
+      fetch('http://localhost:2000/donar') 
         .then(response => response.json())
         .then(data => {
           setDonorDetails(data); 
@@ -35,17 +35,16 @@ function Admin() {
     }
   }, [isLoggedIn]);
 
-  // Add an empty card object
   useEffect(() => {
     setCardsData(prevData => [...prevData, {}]);
   }, []);
 
-  // Calculate total number
+
   const totalNumber = cardsData.reduce((acc, card) => acc + (card.number || 0), 0);
 
-  // Function to handle edit action
+
   const handleEdit = (id) => {
-    // Logic to handle edit action
+   
     console.log(`Editing donor with ID: ${id}`);
   };
 
@@ -60,11 +59,7 @@ function Admin() {
   const renderDonorDetails = () => {
     return (
       <div>
-<<<<<<< HEAD
-        <h1 className='ddonar' id='donar'>Donor</h1>
-=======
         <h1 className='ddonar' id='donar'>Donars history</h1>
->>>>>>> d95af75307a16ca7770199407e1e1a44789b9d0d
         <table className="donor-details">
           <thead>
             <tr>
@@ -116,7 +111,7 @@ function Admin() {
         <ul>
     
           <li><a href='#' onClick={() => scrollToSection('home')}>BLOOD STOCK</a></li>
-          <FontAwesomeIcon icon="fa-solid fa-user" />
+          {/* <FontAwesomeIcon icon='faPerson' /> */}
           <li><a href='#donor' onClick={() => scrollToSection('donor')}>DONORS HISTORY</a></li>
           <li><a href='#blood-request' onClick={() => scrollToSection('blood-request')}>Blood Requests</a></li>
         </ul>
@@ -148,3 +143,4 @@ function Admin() {
 }
 
 export default Admin;
+

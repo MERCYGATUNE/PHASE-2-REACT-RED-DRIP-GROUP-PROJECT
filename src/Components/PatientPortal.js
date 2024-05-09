@@ -1,52 +1,39 @@
-import {useState} from 'react'
-import PatientLogin from './PatientLogin'
-import './PatientPortal.css'
+import React, { useState } from 'react';
+import PatientLogin from './PatientLogin';
+import './PatientPortal.css';
 
-
-function PatientPortal() {
+function ParentComponent() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [ setUsername] = useState('');
 
-  const handleLoginSuccess = (username) => {
-    setIsLoggedIn(true);
-    setUsername(username);
+  const handleLoginSuccess = (success) => {
+    setIsLoggedIn(success);
   };
+
   return (
-    <div className="portal">
-      {/* Navbar */}
-      <nav className="navbar">
-        <nl>
-          <li><a href="#home">DONOR DETAILS</a></li>
-          <li><a href="#donateblood">DONOR HISTORY</a></li>
-          <li><a href="#details">HEALTH HISTORY</a></li>
-          <li><a href="#donationhistory">Donation History</a></li>
-          <li><a href="#bloodrequest">Blood Request</a></li>
-        </nl>
-      </nav>
-      
-
-      {/* Content */}
-      <div className="portall-content">
-        {isLoggedIn ? (
-          <div className="portall-header">
-          collo
-          </div>
-        ) : (
-          <PatientLogin onLoginSuccess={handleLoginSuccess} />
-        )}
-      </div>
-      
-
-
-
-
-
-
-
-
-
+    <div>
+      {isLoggedIn ? 
+        <div>
+          <h2 className='weeeelcome'>Welcome to the Patient Portal</h2>
+          <h1 className='patient' id='patient'> history</h1>
+        <table className="patient-details"></table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Blood Group</th>
+              <th>Address</th>
+              <th>health history</th>
+              <th>mobile</th>
+              <th>Action</th>
+              
+            </tr>
+          </thead>
+          
+        </div>
+       : (
+        <PatientLogin onLoginSuccess={handleLoginSuccess} />
+      )}
     </div>
-  )
+  );
 }
 
-export default PatientPortal
+export default ParentComponent;

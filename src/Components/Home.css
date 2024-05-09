@@ -19,6 +19,7 @@ body {
     margin-top: -600px;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+     
 }
 
 .hero-content {
@@ -34,4 +35,7 @@ header {
     justify-content: flex-end;
     position: fixed;
     margin-top: 330px;
+}
+.reach{
+    color:white;
 }
