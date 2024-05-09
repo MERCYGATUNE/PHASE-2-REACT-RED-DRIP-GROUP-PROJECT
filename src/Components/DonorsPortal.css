@@ -131,27 +131,21 @@ nav li a {
 
 .bld {
     margin-top: 20px;
-    /* Adjusted margin-top value */
     font-size: 30px;
     color: black;
-    /* Change text color to black */
 }
 
 .mmm {
     margin-bottom: 650px;
-    /* Adjusted margin-bottom value */
     font-size: 20px;
-    /* Adjusted padding */
 }
 
 .formm-group {
     margin-top: 200px;
-    /* Adjusted margin-top value */
 }
 
 .formm-group label {
     font-size: 20px;
-    /* Adjusted font size */
     color: black;
 
 }
@@ -159,31 +153,28 @@ nav li a {
 .formm-group select,
 .formm-group input {
     width: 100%;
-    /* Set width to 100% */
+
     padding: 10px;
-    /* Adjusted padding */
+
     font-size: 16px;
-    /* Adjusted font size */
+
     margin-top: 10px;
-    /* Adjusted margin-top value */
 }
 
 .formm-group select {
     border-radius: 5px;
-    /* Added border-radius */
+
 }
 
 .formm-group input[type="number"],
 .formm-group input[type="text"] {
     border-radius: 5px;
-    /* Added border-radius */
+
     border: 1px solid #ccc;
-    /* Added border */
+
 }
 
-/* In your DonorsPortal.css file */
 
-/* Style for the table */
 .donation-history-table {
     width: 100%;
     border-collapse: collapse;
@@ -191,7 +182,6 @@ nav li a {
     position: static;
 }
 
-/* Style for table header */
 .donation-history-table th {
     border: 1px solid #ccc;
     padding: 8px;
@@ -203,12 +193,12 @@ nav li a {
     padding: 8px;
 }
 
-/* Style for odd rows */
+
 .donation-history-table tbody tr:nth-child(odd) {
     background-color: #dd1d67;
 }
 
-/* Style for even rows */
+
 .donation-history-table tbody tr:nth-child(even) {
     background-color: #ffffff;
 }
@@ -249,7 +239,7 @@ nav li a {
     transition: 0.7s;
 }
 
-/* DonorsPortal.css */
+
 
 .donor-portal {
     width: 20%;

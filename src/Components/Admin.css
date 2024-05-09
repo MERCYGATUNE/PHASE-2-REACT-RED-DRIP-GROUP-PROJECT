@@ -15,7 +15,7 @@
     transition: margin-left 0.3s ease;
 }
 
-/* Slide in the sidebar when hovering */
+/* Slides in the sidebar when hovering */
 .sidebar:hover {
     margin-left: 0;
     background-color: rgb(126, 37, 37);

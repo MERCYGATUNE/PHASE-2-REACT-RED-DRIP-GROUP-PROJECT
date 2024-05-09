@@ -7,7 +7,7 @@ function DonorLogin({ onLoginSuccess }) {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = () => {
-    // Perform validation
+    
     if (username === 'collo','EW' && password === 'collo123','Z') {
       
       onLoginSuccess();
@@ -39,8 +39,7 @@ function DonorLogin({ onLoginSuccess }) {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-  {/*      
-      {errorMessage && <p className="error-message">{errorMessage}</p>} */}
+  
       <button className="login-button" onClick={handleLogin}>Login</button>
     </div>
   );
