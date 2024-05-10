@@ -41,7 +41,7 @@ You may also see any lint errors in the console.
 Git
 
 ## Live Site
-(https://    xy.com)
+( https://663e5e399f93db20393e2380--reddrip2024.netlify.app/)
 
 ## TECHNOLOGY USED
 REACT
