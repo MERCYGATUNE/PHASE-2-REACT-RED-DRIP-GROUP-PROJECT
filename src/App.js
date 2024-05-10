@@ -7,6 +7,7 @@ import DonorsPortal from './Components/DonorsPortal';
 import Admin from './Components/Admin'; 
 import Bloodbanklist from './Components/Bloodbanklist';
 import PatientPortal from './Components/PatientPortal';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 function App() {
