@@ -19,7 +19,7 @@ Used to install Axios library via npm.Its used for making HTTP requests from bro
 ## `npm install react-router-dom
 Used to install packages that provide routing capabilities for React applications when using the DOM.
 ## `json-server --watch data.json --port 9000`
-Used to run server to fetch data for bloodbanklist component.
+(CRUCIAL):Used to run server to fetch data for bloodbanklist component.
 
 ## Getting Started with Create React App
 
